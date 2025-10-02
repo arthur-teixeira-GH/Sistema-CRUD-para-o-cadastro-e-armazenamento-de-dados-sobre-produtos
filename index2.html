@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema CRUD: cadastro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="container-body">
+        <div id="container-geral">
+            <div id="titulo-crud">
+                <h1>Sistema CRUD</h1>
+            </div>
+            <div id="container-titulo">
+                <h2>Cadastro de produtos</h2>
+            </div>
+            <form id="id-formulario">
+                <div class="container-formulario">
+                    <label for="nome_produto">Nome do produto:</label>
+                    <input type="text" id="nome_produto" name="nome_p" placeholder="Nome produto...">
+                </div>
+                <div class="container-formulario">
+                    <label for="preco_produto">Preço do produto:</label>
+                    <input type="text" id="preco_produto" name="preco_p" placeholder="preço do produto...">
+                    <span id="erro-preco" class="error">O preço deve conter apenas números</span>
+                    <span id="preco-negativo" class="error">O preço deve ser maior que 0</span>
+                </div>
+                <div class="container-formulario">
+                    <label for="categoria_produto">Categoria do produto:</label>
+                    <input type="text" id="categoria_produto" name="categoria_p" placeholder="categoria produto...">
+                </div>
+                <div class="container-formulario">
+                    <label for="lote_produto">Numero do lote:</label>
+                    <input type="text" id="lote_produto" name="lote_p" placeholder="Número lote...">
+                    <span id="erro-lote" class="error">O lote deve conter apenas números</span>
+                    <span id="erro-lote-duplicado" class="error">Erro: Este número de lote já existe!</span>
+                </div>
+                <div class="container-formulario">
+                    <label for="origem_produto">Lugar de origem:</label>
+                    <input type="text" id="origem_produto" name="origem_p" placeholder="Origem produto...">
+                </div>
+                <div class="container-formulario">
+                    <label for="data_produto">Data de validade:</label>
+                    <input type="date" id="data_produto" name="data_p" placeholder="Data de validade...">
+                </div>
+                <div id="container-formulario-submeter">
+                    <input type="submit" value="Adicionar" onclick="adicionarProduto(); return false">
+                    <input type="reset" value="Limpar formulário">
+                    <div id="container-link">
+                        <a href="index.html">Ir para a outra página</a>
+                    </div>
+                </div>
+            </form>
+            <div id="container-msg"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

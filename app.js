@@ -1,4 +1,4 @@
-// A função para adicionar o produto. Ela valida, salva no localStorage e redireciona.
+
 function adicionarProduto() {
     const nome = document.getElementById("nome_produto").value;
     const preco = document.getElementById("preco_produto").value;
@@ -166,60 +166,3 @@ function editarItem(index) {
 if (document.getElementById("listahtml")) {
     window.onload = carregarLista;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-//criação de uma matriz vazia para guardar os dados da tabela
-let matriz_crud = []
-
-localStorage.getItem("matriz_salva")
-
-//criação de uma função adicionar para quando clicarmos no botão ele adicionar
-function funcaoadicionar(){
-
-    //criamos uma variavel que irá referenciar no JS a tabela que queremos adicionar com JS Aatravés do document,getelemtbyid("id")
-    let tabela = document.getElementById("tableid")
-    //criamos uma nova linha para adicionarmos os dados (esse -1 adiciona uma  linha sempre abaixo)
-    const novalinha = tabela.insertRow(-1)
-    //criamos uma variavel que irá criar as celulas dessa linha 
-    let celula_nome = novalinha.insertCell(0)
-    let celula_sobrenome = novalinha.insertCell(1)
-
-
-    celula_nome.innerHTML = prompt("Digite o nome:")
-    celula_sobrenome.innerHTML = prompt("Digite o sobrenome:")
-
-    nome_array = celula_nome.innerHTML
-    sobrenome_array = celula_sobrenome.innerHTML
-
-    // Cria o array com os valores (nome e sobrenome)
-    let linha = [nome_array, sobrenome_array];
-    
-    // Adiciona o array à matriz usando o método push()
-    matriz_crud.push(linha);
-
-    localStorage.setItem("matriz_salva", matriz_crud)
-}
-*/

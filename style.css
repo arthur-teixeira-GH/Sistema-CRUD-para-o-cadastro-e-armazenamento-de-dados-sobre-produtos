@@ -112,12 +112,9 @@ input[type="reset"]{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/*Estilo página de produtos*/
-
-/* Estilos globais e reset */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(248, 226, 244); /* Cor de fundo da página de cadastro */
+    background-color: rgb(248, 226, 244); 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,7 +124,6 @@ body {
     align-items: center;
 }
 
-/* Container principal, com o mesmo estilo de 'card' da página de cadastro */
 #container-geral {
     max-width: 900px;
     background-color: white;
@@ -137,7 +133,6 @@ body {
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Estilo do título principal */
 #titulo-div {
     text-align: center;
     margin-bottom: 30px;
@@ -150,7 +145,6 @@ body {
     font-size: 2em;
 }
 
-/* Estilo para a tabela de produtos */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -176,7 +170,7 @@ th {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Linhas zebradas */
+    background-color: #f9f9f9; 
 }
 
 tbody tr:hover {
